@@ -1174,12 +1174,12 @@
         // Gather form data
         const countryCode = document.getElementById('countryCode').value;
         const phoneNumber = document.getElementById('phone').value;
-        const fullPhoneNumber = `${countryCode}${phoneNumber}`;
+        const fullPhoneNumber = "'" + countryCode + phoneNumber; // Adding quote at the start
         
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
-            phone: "'" + countryCode + phoneNumber,
+            phone: fullPhoneNumber, // Using the formatted fullPhoneNumber
             service: document.getElementById('service').value,
             message: document.getElementById('message').value
         };
