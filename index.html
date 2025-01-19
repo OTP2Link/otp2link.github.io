@@ -1179,9 +1179,7 @@
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
-            phone: fullPhoneNumber,
-            countryCode: countryCode,
-            phoneNumberOnly: phoneNumber,
+            phone: "'" + countryCode + phoneNumber,
             service: document.getElementById('service').value,
             message: document.getElementById('message').value
         };
