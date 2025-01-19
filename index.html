@@ -720,6 +720,13 @@
                                placeholder="Enter your full name">
                     </div>
                     <div class="form-group">
+                        <label class="form-label">Email *</label>
+                        <input type="email" class="form-input" id="email" 
+                               required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="Please enter a valid email address"
+                               placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
                     <label class="form-label">Phone *</label>
                     <div class="phone-input-container" style="display: flex; gap: 0.5rem;">
                         <select class="form-input" id="countryCode" style="width: 120px;">
@@ -832,14 +839,6 @@
                                title="Please enter a valid phone number (6-15 digits)"
                                placeholder="Enter phone number"
                                style="flex: 1;">
-                    </div>
-                </div>
-                    <div class="form-group">
-                        <label class="form-label">Phone *</label>
-                        <input type="tel" class="form-input" id="phone" 
-                               required pattern="[0-9]{10}"
-                               title="Please enter a valid 10-digit phone number"
-                               placeholder="Enter your 10-digit phone number">
                     </div>
                     <div class="form-group">
                         <label class="form-label">Service Required *</label>
