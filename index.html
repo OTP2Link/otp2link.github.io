@@ -720,12 +720,120 @@
                                placeholder="Enter your full name">
                     </div>
                     <div class="form-group">
-                        <label class="form-label">Email *</label>
-                        <input type="email" class="form-input" id="email" 
-                               required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                               title="Please enter a valid email address"
-                               placeholder="your.email@example.com">
+                    <label class="form-label">Phone *</label>
+                    <div class="phone-input-container" style="display: flex; gap: 0.5rem;">
+                        <select class="form-input" id="countryCode" style="width: 120px;">
+                            <option value="+93">+93 (AFG)</option>
+                            <option value="+355">+355 (ALB)</option>
+                            <option value="+213">+213 (DZA)</option>
+                            <option value="+54">+54 (ARG)</option>
+                            <option value="+374">+374 (ARM)</option>
+                            <option value="+61">+61 (AUS)</option>
+                            <option value="+43">+43 (AUT)</option>
+                            <option value="+973">+973 (BHR)</option>
+                            <option value="+880">+880 (BGD)</option>
+                            <option value="+32">+32 (BEL)</option>
+                            <option value="+591">+591 (BOL)</option>
+                            <option value="+55">+55 (BRA)</option>
+                            <option value="+359">+359 (BGR)</option>
+                            <option value="+855">+855 (KHM)</option>
+                            <option value="+1">+1 (CAN)</option>
+                            <option value="+56">+56 (CHL)</option>
+                            <option value="+86">+86 (CHN)</option>
+                            <option value="+57">+57 (COL)</option>
+                            <option value="+506">+506 (CRI)</option>
+                            <option value="+385">+385 (HRV)</option>
+                            <option value="+357">+357 (CYP)</option>
+                            <option value="+420">+420 (CZE)</option>
+                            <option value="+45">+45 (DNK)</option>
+                            <option value="+20">+20 (EGY)</option>
+                            <option value="+372">+372 (EST)</option>
+                            <option value="+251">+251 (ETH)</option>
+                            <option value="+358">+358 (FIN)</option>
+                            <option value="+33">+33 (FRA)</option>
+                            <option value="+995">+995 (GEO)</option>
+                            <option value="+49">+49 (DEU)</option>
+                            <option value="+30">+30 (GRC)</option>
+                            <option value="+299">+299 (GRL)</option>
+                            <option value="+852">+852 (HKG)</option>
+                            <option value="+36">+36 (HUN)</option>
+                            <option value="+354">+354 (ISL)</option>
+                            <option value="+91">+91 (IND)</option>
+                            <option value="+62">+62 (IDN)</option>
+                            <option value="+98">+98 (IRN)</option>
+                            <option value="+964">+964 (IRQ)</option>
+                            <option value="+353">+353 (IRL)</option>
+                            <option value="+972">+972 (ISR)</option>
+                            <option value="+39">+39 (ITA)</option>
+                            <option value="+81">+81 (JPN)</option>
+                            <option value="+962">+962 (JOR)</option>
+                            <option value="+7">+7 (KAZ)</option>
+                            <option value="+254">+254 (KEN)</option>
+                            <option value="+82">+82 (KOR)</option>
+                            <option value="+965">+965 (KWT)</option>
+                            <option value="+856">+856 (LAO)</option>
+                            <option value="+371">+371 (LVA)</option>
+                            <option value="+961">+961 (LBN)</option>
+                            <option value="+218">+218 (LBY)</option>
+                            <option value="+370">+370 (LTU)</option>
+                            <option value="+352">+352 (LUX)</option>
+                            <option value="+853">+853 (MAC)</option>
+                            <option value="+60">+60 (MYS)</option>
+                            <option value="+356">+356 (MLT)</option>
+                            <option value="+52">+52 (MEX)</option>
+                            <option value="+377">+377 (MCO)</option>
+                            <option value="+976">+976 (MNG)</option>
+                            <option value="+212">+212 (MAR)</option>
+                            <option value="+95">+95 (MMR)</option>
+                            <option value="+977">+977 (NPL)</option>
+                            <option value="+31">+31 (NLD)</option>
+                            <option value="+64">+64 (NZL)</option>
+                            <option value="+234">+234 (NGA)</option>
+                            <option value="+47">+47 (NOR)</option>
+                            <option value="+968">+968 (OMN)</option>
+                            <option value="+92">+92 (PAK)</option>
+                            <option value="+970">+970 (PSE)</option>
+                            <option value="+507">+507 (PAN)</option>
+                            <option value="+595">+595 (PRY)</option>
+                            <option value="+51">+51 (PER)</option>
+                            <option value="+63">+63 (PHL)</option>
+                            <option value="+48">+48 (POL)</option>
+                            <option value="+351">+351 (PRT)</option>
+                            <option value="+974">+974 (QAT)</option>
+                            <option value="+40">+40 (ROU)</option>
+                            <option value="+7">+7 (RUS)</option>
+                            <option value="+966">+966 (SAU)</option>
+                            <option value="+381">+381 (SRB)</option>
+                            <option value="+65">+65 (SGP)</option>
+                            <option value="+421">+421 (SVK)</option>
+                            <option value="+386">+386 (SVN)</option>
+                            <option value="+27">+27 (ZAF)</option>
+                            <option value="+34">+34 (ESP)</option>
+                            <option value="+94">+94 (LKA)</option>
+                            <option value="+46">+46 (SWE)</option>
+                            <option value="+41">+41 (CHE)</option>
+                            <option value="+886">+886 (TWN)</option>
+                            <option value="+66">+66 (THA)</option>
+                            <option value="+216">+216 (TUN)</option>
+                            <option value="+90">+90 (TUR)</option>
+                            <option value="+380">+380 (UKR)</option>
+                            <option value="+971">+971 (ARE)</option>
+                            <option value="+44">+44 (GBR)</option>
+                            <option value="+1">+1 (USA)</option>
+                            <option value="+598">+598 (URY)</option>
+                            <option value="+58">+58 (VEN)</option>
+                            <option value="+84">+84 (VNM)</option>
+                            <option value="+967">+967 (YEM)</option>
+                            <option value="+260">+260 (ZMB)</option>
+                            <option value="+263">+263 (ZWE)</option>
+                        </select>
+                        <input type="tel" class="form-input" id="phone" 
+                               required pattern="[0-9]{6,15}"
+                               title="Please enter a valid phone number (6-15 digits)"
+                               placeholder="Enter phone number"
+                               style="flex: 1;">
                     </div>
+                </div>
                     <div class="form-group">
                         <label class="form-label">Phone *</label>
                         <input type="tel" class="form-input" id="phone" 
@@ -1065,14 +1173,19 @@
         submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         
         // Gather form data
+        const countryCode = document.getElementById('countryCode').value;
+        const phoneNumber = document.getElementById('phone').value;
+        const fullPhoneNumber = `${countryCode}${phoneNumber}`;
+        
         const formData = {
             name: document.getElementById('name').value,
             email: document.getElementById('email').value,
-            phone: document.getElementById('phone').value,
+            phone: fullPhoneNumber,
+            countryCode: countryCode,
+            phoneNumberOnly: phoneNumber,
             service: document.getElementById('service').value,
             message: document.getElementById('message').value
         };
-
         try {
             // Replace GOOGLE_SCRIPT_URL with your Google Apps Script deployment URL
             const response = await fetch('https://script.google.com/macros/s/AKfycbx2FaIGrKQBVpv2aXgb4-YS_4mVNmL3XAYQ8gV8Gvt1epeoJ8wb7Q0gr2vB4la0NGctXA/exec', {
